@@ -1,0 +1,7 @@
+iptables -A INPUT -p tcp ili udp --dport 2000:3000 -j ACCEPT
+sudo su root
+cd
+passwd root
+nano /etc/ssh/sshd_config
+yum install nano -y
+service sshd restart
